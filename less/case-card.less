@@ -1,0 +1,67 @@
+.weiqing-caseshow {
+  &-card {
+    text-align: center;
+    background: #fff;
+    padding-top: 85px;
+    padding-bottom: 55px;
+    height: 406px;
+    & h4 {
+      font-size: 16px;
+    }
+    transition: all 1s;
+    &:hover {
+      box-shadow: rgb(237, 237, 237) 0 0 30px inset;
+      .weiqing-caseshow-hezuo {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+      }
+      .caseshow-button-wraper {
+        height: auto;
+        opacity: 1;
+      }
+      .weiqing-caseshow-class {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+        margin-bottom: 0;
+        overflow: hidden;
+      }
+    }
+  }
+  &-des {
+    color: #b3b3b3;
+  }
+  &-hezuo {
+    color: #b3b3b3;
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.5s ease;
+  }
+  &-casetype {
+    font-size: 14px;
+    font-weight: 500;
+    color: #c8202c;
+    margin-bottom: 18px;
+  }
+  &-class {
+    display: inline-block;
+    color: #c8202c;
+    font-size: 12px;
+    border: 1px solid #c8202c;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    transition: all 1s;
+  }
+}
+.caseshow-button-wraper {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s;
+}

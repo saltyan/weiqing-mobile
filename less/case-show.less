@@ -1,0 +1,38 @@
+.weiqing-casepage {
+  &-wraper {
+    margin-bottom: 50px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    &>div {
+      border-right: 1px solid #dcdcdc;
+    }
+    &>div:last-child {
+      border-right: none;
+    }
+  }
+  &-detail {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    padding: 54px 84px;
+    h3 {
+      color: #cd0412;
+      margin-top: 0;
+    }
+  }
+  &-detailleft {
+    border-right: 1px solid #e6e6e6;
+  }
+  &-wraper, &-detail {
+    @media(max-width: 767px) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
